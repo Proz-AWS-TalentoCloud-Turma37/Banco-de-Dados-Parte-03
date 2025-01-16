@@ -368,7 +368,7 @@ CREATE TABLE cliente (
     PRIMARY KEY (id_cliente),
     FOREIGN KEY (id_empresa) REFERENCES empresa(id_empresa),
     CONSTRAINT unique_email UNIQUE (email)
-)); 
+); 
 ````
 
 Neste exemplo:
@@ -391,6 +391,7 @@ id_empresa (PK, auto_increment)
 nome_empresa (VARCHAR)
 cnpj (VARCHAR)
 data_criacao (DATE)
+
 cliente:
 
 id_cliente (PK, auto_increment)
@@ -398,18 +399,21 @@ nome_cliente (VARCHAR)
 email (VARCHAR)
 telefone (VARCHAR)
 id_empresa (FK)
+
 vendedor:
 
 id_vendedor (PK, auto_increment)
 nome_vendedor (VARCHAR)
 comissao (DECIMAL)
 id_empresa (FK)
+
 produto:
 
 id_produto (PK, auto_increment)
 nome_produto (VARCHAR)
 preco (DECIMAL)
 id_empresa (FK)
+
 indicacao:
 
 id_indicacao (PK, auto_increment)
