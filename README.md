@@ -52,7 +52,7 @@ Inserir dados na tabela:
 
 ````sql
 INSERT INTO nome_da_tabela (coluna1, coluna2, ...)
-VALUES (valor1, valor2, ...));
+VALUES (valor1, valor2, ...);
 ````
 
 Exemplo:
@@ -109,7 +109,7 @@ Adicionar uma chave primária:
 
 ````sql
 ALTER TABLE nome_da_tabela
-ADD PRIMARY KEY (coluna)); 
+ADD PRIMARY KEY (coluna); 
 ```
 
 Adicionar uma chave estrangeira:
