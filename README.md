@@ -280,6 +280,7 @@ CREATE TABLE cliente (
 ````
 
 2. Chave Estrangeira (FOREIGN KEY)
+3. 
 A chave estrangeira é usada para criar um relacionamento entre duas tabelas, onde uma coluna (ou conjunto de colunas) em uma tabela faz referência à chave primária de outra tabela.
 
 ````sql
@@ -303,6 +304,7 @@ CREATE TABLE pedido (
 ````
 
 3. Unique
+   
 A restrição UNIQUE garante que todos os valores em uma coluna sejam exclusivos (sem duplicatas), mas permite valores nulos.
 
 ````sql
@@ -387,37 +389,42 @@ Praticar o conceito de banco de dados relacional criando tabelas relacionadas e 
 Você vai criar um banco de dados para gerenciar empresas, clientes, vendedores e produtos, além de um programa de indicação.
 
 ### Tabelas a serem criadas:
+
 empresa:
 
-id_empresa (PK, auto_increment)
-nome_empresa (VARCHAR)
-cnpj (VARCHAR)
-data_criacao (DATE)
+id_empresa (PK, auto_increment)<br>
+nome_empresa (VARCHAR)<br>
+cnpj (VARCHAR)<br>
+data_criacao (DATE)<br>
+
 cliente:
 
-id_cliente (PK, auto_increment)
-nome_cliente (VARCHAR)
-email (VARCHAR)
-telefone (VARCHAR)
-id_empresa (FK)
+id_cliente (PK, auto_increment)<br>
+nome_cliente (VARCHAR)<br>
+email (VARCHAR)<br>
+telefone (VARCHAR)<br>
+id_empresa (FK)<br>
+
 vendedor:
 
-id_vendedor (PK, auto_increment)
-nome_vendedor (VARCHAR)
-comissao (DECIMAL)
-id_empresa (FK)
+id_vendedor (PK, auto_increment)<br>
+nome_vendedor (VARCHAR)<br>
+comissao (DECIMAL)<br>
+id_empresa (FK)<br>
+
 produto:
 
-id_produto (PK, auto_increment)
-nome_produto (VARCHAR)
-preco (DECIMAL)
-id_empresa (FK)
+id_produto (PK, auto_increment)<br>
+nome_produto (VARCHAR)<br>
+preco (DECIMAL)<br>
+id_empresa (FK)<br>
+
 indicacao:
 
-id_indicacao (PK, auto_increment)
-id_indicador (FK para cliente)
-id_indicado (FK para cliente)
-data_indicacao (DATE)
+id_indicacao (PK, auto_increment)<br>
+id_indicador (FK para cliente)<br>
+id_indicado (FK para cliente)<br>
+data_indicacao (DATE)<br>
 
 ## Atividades:
 
